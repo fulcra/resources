@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>username generator</title>
+  </head>
+  <body>
+    <button onclick="randomName()">Click</button>
+     <input id="name" />
+  </body>
+  
+  <script>
+    var names = ['mango', 'mangos',  'apple', 'apples', 'taco', 'pear', 'peanut', 'pecan', 'orange', 'banana', 'vibe', 'grape', 'master', 'spider', 'donkey', 'ninja', 'sunny', 'ruby', 'sapphire', 'peach', 'peaches', 'baseball', 'basketball', 'softball', 'rugby', 'golden', 'silver', 'global', 'silk', 'pardon', 'rice', 'ice', 'reach', 'veil', 'triumph', 'flame', 'recite', 'grey', 'tense', 'basin', 'natural', 'strew', 'cover', 'hushed'];
+    function randomName() {
+        name = names[randInt(0, names.length)] + randInt(1,50);
+        document.getElementById('name').value = name;
+    }
+    function randInt($min, $max) {
+        return Math.floor((Math.random() * $max) + $min);
+    }
+</script>
+
+</html>
